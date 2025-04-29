@@ -1,0 +1,1128 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ANSYS Report</title>
+<style>
+BODY, P, TABLE, DIV.CAPTION {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 95%;
+}
+H1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #3b577d;
+}
+H2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #3b577d;
+}
+H3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #3b577d;
+}
+H4 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #3b577d;
+}
+H5 {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #3b577d;
+}
+H6 {
+  font-size: 1.05em;
+  font-weight: normal;
+  color: #3b577d;
+}
+P {
+  font-weight: normal;
+}
+P.Subject {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #000099;
+  text-align: center;
+}
+P.Heading {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+P.Title {
+  font-size: 1.0em;
+  text-align: center;
+  margin-top: 0pt;
+}
+P.Bold {
+  font-weight: bold;
+}
+TABLE{
+  border-collapse: collapse;
+  border: solid 1px #A5BAD5;
+}
+TD {
+  border: solid 1px #A5BAD5;
+  padding: 3px 5px 3px 5px;
+  font-weight: normal;
+  vertical-align:top
+}
+DIV.CAPTION {
+  font-weight: normal;
+  text-align: left;
+}
+TABLE.FigureTable { 
+  border-collapse: collapse;
+  border: 0px;
+  margin: 0px 0px 0px 0px;
+  page-break-inside: avoid;
+}
+TD.FigureTitle {
+  border: 0px;
+  padding: 3px 5px 3px 5px;
+  font-weight: normal;
+  text-align: left;
+}
+TD.FigurePicture {
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  font-weight: normal;
+  text-align: left;
+}
+TD.Figure3D {
+  border: 1px solid black;
+  padding: 0px 0px 0px 0px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+TD.FigureClose3D {
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+TD.TDStyle1 {
+  font-size: 1.0em;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #d1dcea
+}
+
+TD.TDStyle2 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff
+}
+
+TD.TDStyle3 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #e8eef5
+}
+
+TD.TDStyle4 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: right;
+  color: #000000;
+  background-color: #ffffff
+}
+
+TD.TDStyle5 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  background-color: #e8eef5
+}
+
+TD.TDStyle6 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff
+}
+
+TD.TDStyle7 {
+  font-size: 1.0em;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #e8eef5
+}
+
+
+</style>
+
+</head>
+<body>
+<p class='Title'><img src='Report/AnsysReportLogo.png' alt='ANSYS Logo'></p>
+<p class='Heading'>Date</p>
+<p class='Title'> 2025/04/29 11:50:06</p>
+<hr>
+<h1>Contents</h1>
+<p><a href="#SECTION1.">1.&nbsp;File Report</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#TABLE1">Table 1</a>&nbsp;&nbsp;File Information for FFF<br>
+<a href="#SECTION2.">2.&nbsp;Mesh Report</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#TABLE2">Table 2</a>&nbsp;&nbsp;Mesh Information for FFF<br>
+<a href="#SECTION3.">3.&nbsp;Physics Report</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#TABLE3">Table 3</a>&nbsp;&nbsp;Domain Physics for FFF<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#TABLE4">Table 4</a>&nbsp;&nbsp;Boundary Physics for FFF<br>
+<a href="#SECTION4.">4.&nbsp;User Data</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CHART1">Chart 1</a><br>
+</p>
+<hr>
+
+<h1 style='page-break-before:always'><a id=SECTION1.></a>1.&nbsp;File Report</h1>
+
+<a id=TABLE1></a><DIV CLASS=CAPTION><b>Table 1.</b>&nbsp;&nbsp;File Information for FFF</DIV>
+<TABLE>
+  <TR>
+    <TD CLASS=TDStyle1>Case</TD>
+    <TD CLASS=TDStyle2>FFF</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1>File Path</TD>
+    <TD CLASS=TDStyle2>C:\Users\prakh\OneDrive\Desktop\251_Project-Files\Battery_Pack_Geometry_files\dp0\FFF\Fluent\FFF.1.flprj</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1>File Date</TD>
+    <TD CLASS=TDStyle2>28 April 2025</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1>File Time</TD>
+    <TD CLASS=TDStyle2>03:55:46 PM</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1>File Type</TD>
+    <TD CLASS=TDStyle2>CFF</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1>File Version</TD>
+    <TD CLASS=TDStyle2>--</TD>
+  </TR>
+</TABLE>
+&nbsp;<br>
+
+<h1 style='page-break-before:always'><a id=SECTION2.></a>2.&nbsp;Mesh Report</h1>
+
+<a id=TABLE2></a><DIV CLASS=CAPTION><b>Table 2.</b>&nbsp;&nbsp;Mesh Information for FFF</DIV>
+<TABLE>
+  <TR>
+    <TD CLASS=TDStyle1>Domain</TD>
+    <TD CLASS=TDStyle1>Nodes</TD>
+    <TD CLASS=TDStyle1>Elements</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>battery_pack</TD>
+    <TD CLASS=TDStyle4>115290</TD>
+    <TD CLASS=TDStyle4>95788</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.1</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.10</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.11</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.12</TD>
+    <TD CLASS=TDStyle4>15795</TD>
+    <TD CLASS=TDStyle4>14740</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.13</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.14</TD>
+    <TD CLASS=TDStyle4>15795</TD>
+    <TD CLASS=TDStyle4>14740</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.15</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.16</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.2</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.3</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.4</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.5</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.6</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.7</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.8</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>cells cell.9</TD>
+    <TD CLASS=TDStyle4>16110</TD>
+    <TD CLASS=TDStyle4>15048</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle3>All Domains</TD>
+    <TD CLASS=TDStyle4>372420</TD>
+    <TD CLASS=TDStyle4>335940</TD>
+  </TR>
+</TABLE>
+&nbsp;<br>
+
+<h1 style='page-break-before:always'><a id=SECTION3.></a>3.&nbsp;Physics Report</h1>
+
+<a id=TABLE3></a><DIV CLASS=CAPTION><b>Table 3.</b>&nbsp;&nbsp;Domain Physics for FFF</DIV>
+<TABLE>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - battery_pack</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>battery_pack</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.1</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.1</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.10</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.10</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.11</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.11</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.12</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.12</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.13</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.13</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.14</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.14</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.15</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.15</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.16</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.16</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.2</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.2</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.3</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.3</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.4</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.4</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.5</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.5</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.6</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.6</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.7</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.7</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.8</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.8</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Domain - cells cell.9</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>FLUID</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cells-cell.9</TD>
+  </TR>
+</TABLE>
+&nbsp;<br>
+
+<a id=TABLE4></a><DIV CLASS=CAPTION><b>Table 4.</b>&nbsp;&nbsp;Boundary Physics for FFF</DIV>
+<TABLE>
+  <TR>
+    <TD CLASS=TDStyle7>Domain</TD>
+    <TD CLASS=TDStyle7 colspan="2" >Boundaries</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="57" >battery_pack</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_10 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_10-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_11 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_11-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_12 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_12-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_13 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_13-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_14 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_14-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_15 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_15-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_16 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_16-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_2 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_2-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_3 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_3-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_4 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_4-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_5 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_5-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_6 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_6-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_7 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_7-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_8 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_8-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - contact_region_9 src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>contact_region_9-src</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - inlet</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>VELOCITY-INLET</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>inlet</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - outlet</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>PRESSURE-OUTLET</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>outlet</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall battery_pack</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-battery_pack</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.1</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.1</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.1</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.10</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_10 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_10-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.10</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.10</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.11</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_11 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_11-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.11</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.11</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.12</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_12 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_12-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.12</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.12</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.13</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_13 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_13-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.13</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.13</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.14</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_14 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_14-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.14</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.14</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.15</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_15 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_15-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.15</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.15</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.16</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_16 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_16-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.16</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.16</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.2</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_2 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_2-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.2</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.2</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.3</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_3 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_3-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.3</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.3</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.4</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_4 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_4-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.4</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.4</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.5</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_5 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_5-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.5</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.5</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.6</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_6 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_6-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.6</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.6</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.7</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_7 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_7-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.7</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.7</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.8</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_8 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_8-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.8</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.8</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle2 rowspan="6" >cells cell.9</TD>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - cell_boundary contact_region_9 trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>INTERFACE</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>cell_boundary-contact_region_9-trg</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle1 colspan="2" >Boundary - wall cells cell.9</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Type</TD>
+    <TD CLASS=TDStyle6>WALL</TD>
+  </TR>
+  <TR>
+    <TD CLASS=TDStyle5>Location</TD>
+    <TD CLASS=TDStyle6>wall-cells-cell.9</TD>
+  </TR>
+</TABLE>
+&nbsp;<br>
+
+<h1 style='page-break-before:always'><a id=SECTION4.></a>4.&nbsp;User Data</h1>
+
+<a id=CHART1></a><TABLE class='FigureTable'>
+<TR><TD class='FigureTitle'><b>Chart 1.</b></TD></TR>
+<TR>
+<TD class='FigurePicture'><img src='Report/Chart001.png' alt='Chart 1. Report/Chart001.png'></TD>
+</TR>
+</TABLE>
+
+
+</body>
+</html>
